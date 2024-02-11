@@ -14,7 +14,7 @@ class KButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Color(0xFF468faf),
+        backgroundColor: const Color(0xFF468faf),
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.zero,
         ),

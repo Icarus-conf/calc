@@ -74,14 +74,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: PoppinsText(
+        title: const PoppinsText(
           text: 'Calc',
           fontS: 25,
           color: Colors.white,
           fontWeight: FontWeight.w700,
         ),
         centerTitle: true,
-        backgroundColor: Color(0xFF89c2d9),
+        backgroundColor: const Color(0xFF89c2d9),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -90,10 +90,10 @@ class _HomePageState extends State<HomePage> {
             flex: 2,
             child: Container(
               alignment: Alignment.bottomLeft,
-              padding: EdgeInsets.all(25),
+              padding: const EdgeInsets.all(25),
               child: Text(
                 displayResult,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 40,
                 ),
               ),
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             flex: 6,
             child: GridView(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 4,
                 crossAxisSpacing: 1,
                 mainAxisSpacing: 1,
